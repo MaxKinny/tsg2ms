@@ -18,8 +18,6 @@ Directed Acyclic Graph (DAG) with 2 kinds of edge labels ("row" and "column"), w
 import requests
 import json
 
-
-
 def get_merging_set(row_adj_matrix, col_adj_matrix, flags):
     url_dict1 = {
         "url": f"https://1258763670-8apd76aadv.ap-guangzhou.tencentscf.com",
