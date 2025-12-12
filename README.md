@@ -19,15 +19,26 @@ import requests
 import json
 
 
+
 def get_merging_set(row_adj_matrix, col_adj_matrix, flags):
-    # request results
-    url = f"http://service-4yahjjoi-1258763670.gz.apigw.tencentcs.com/release/tsg2ms"
+    url_dict1 = {
+        "url": f"https://1258763670-8apd76aadv.ap-guangzhou.tencentscf.com",
+        "Host": "1258763670-8apd76aadv.ap-guangzhou.tencentscf.comm"
+    }
+    
+    url_dict2 = {
+        "url": f"http://service-4yahjjoi-1258763670.gz.apigw.tencentcs.com/release/tsg2ms",
+        "Host": "service-4yahjjoi-1258763670.gz.apigw.tencentcs.com"
+    }
+    
+    url_dict = url_dict1  # url_dict2  Can try both
+    url = url_dict["url"]
     data = {"matrix1": row_adj_matrix, "matrix2": col_adj_matrix, "flags": flags}
     headers = {
         "Content-Type": "application/json",
         "Accept": "*/*",
         "Cache-Control": "no-cache",
-        "Host": "service-4yahjjoi-1258763670.gz.apigw.tencentcs.com",
+        "Host": url_dict["Host"],
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
         "User-Agent": "apifox/1.0.0 (https://www.apifox.cn)",
