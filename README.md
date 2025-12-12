@@ -21,13 +21,13 @@ import json
 
 def get_merging_set(row_adj_matrix, col_adj_matrix, flags):
     # request results
-    url = f"http://<is opening soon...>.gz.apigw.tencentcs.com/release/tsg2ms"
+    url = f"http://service-4yahjjoi-1258763670.gz.apigw.tencentcs.com/release/tsg2ms"
     data = {"matrix1": row_adj_matrix, "matrix2": col_adj_matrix, "flags": flags}
     headers = {
         "Content-Type": "application/json",
         "Accept": "*/*",
         "Cache-Control": "no-cache",
-        "Host": "<is opening soon...>.gz.apigw.tencentcs.com",
+        "Host": "service-4yahjjoi-1258763670.gz.apigw.tencentcs.com",
         "Accept-Encoding": "gzip, deflate, br",
         "Connection": "keep-alive",
         "User-Agent": "apifox/1.0.0 (https://www.apifox.cn)",
