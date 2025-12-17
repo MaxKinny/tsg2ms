@@ -4,8 +4,10 @@
 #### Table Structure Graph (TSG) to Merging Set (MS)
 <img src="https://github.com/MaxKinny/tsg2ms/assets/33459391/48e9e3fa-6960-486b-94a1-dce25773e880" width="800">
 
+<!--
 # The definition of table structure
 ### Merging Set (MS): 
+--!>
 
 # The expression of table structure
 ### Description:
