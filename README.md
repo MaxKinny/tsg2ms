@@ -7,7 +7,7 @@
 <!--
 # The definition of table structure
 ### Merging Set (MS): 
---!>
+-->
 
 # The expression of table structure
 ### Description:
